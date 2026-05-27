@@ -234,7 +234,7 @@ async def plan_project(user_prompt: str, project_path: str) -> dict:
                    (id, project_id, title, detailed_prompt, acceptance_criteria,
                     status, priority, tags, model, mission_type,
                     depends_on, auto_dispatch, mission_number, created_at, updated_at)
-                   VALUES (?, ?, ?, ?, ?, 'draft', ?, ?, 'claude-sonnet-4-6', ?, ?, ?, ?, ?, ?)""",
+                   VALUES (?, ?, ?, ?, ?, 'draft', ?, ?, 'claude-opus-4-7', ?, ?, ?, ?, ?, ?)""",
                 (
                     mission_id, project_id,
                     m["title"], m["detailed_prompt"], m.get("acceptance_criteria", ""),
